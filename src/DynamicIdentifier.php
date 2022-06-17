@@ -395,6 +395,7 @@ class DynamicIdentifier implements DynamicIdentifierInterface
      * @throws OutOfBoundsException If no identifier part exists for the
      * specified index
      */
+     #[\ReturnTypeWillChange]
     public function replace($offset, $replacement)
     {
         if (! array_key_exists($offset, $this->identifierParts)) {
@@ -473,6 +474,7 @@ class DynamicIdentifier implements DynamicIdentifierInterface
      *
      * @return int The number of identifer name parts
      */
+     #[\ReturnTypeWillChange]
     public function count()
     {
         return $this->getNumParts();
