@@ -217,6 +217,7 @@ class DynamicIdentifier implements DynamicIdentifierInterface
      * @return bool True if the identifier parts array contains a value at the
      * specified offset
      */
+    #[\ReturnTypeWillChange]
     public function has($offset)
     {
         return isset($this->identifierParts[$offset]);
@@ -415,6 +416,7 @@ class DynamicIdentifier implements DynamicIdentifierInterface
      *
      * @return string The identifier part string
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->part($offset);
@@ -428,6 +430,7 @@ class DynamicIdentifier implements DynamicIdentifierInterface
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $part)
     {
         if ($offset === null) {
