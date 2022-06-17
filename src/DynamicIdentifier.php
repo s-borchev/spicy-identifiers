@@ -462,6 +462,7 @@ class DynamicIdentifier implements DynamicIdentifierInterface
      *
      * @return void
      */
+     #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         $this->remove($offset);
