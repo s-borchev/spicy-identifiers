@@ -447,7 +447,7 @@ class DynamicIdentifier implements DynamicIdentifierInterface
      *
      */
     #[\ReturnTypeWillChange]
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return $this->has($offset);
     }
