@@ -443,7 +443,10 @@ class DynamicIdentifier implements DynamicIdentifierInterface
      * @param int $offset The position to check
      *
      * @return bool True if a part exists at the specified position
+     *
+     *
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return $this->has($offset);
