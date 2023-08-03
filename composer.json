@@ -1,5 +1,5 @@
 {
-    "name": "monospice/spicy-identifiers",
+    "name": "s-borchev/spicy-identifiers",
     "description": "An easy way to parse and manipulate identifier names, such as dynamic method names.",
     "keywords": ["dynamic", "method", "variable", "parser"],
     "type": "library",
